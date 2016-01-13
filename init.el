@@ -117,6 +117,9 @@
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+;; markdown
+(use-package markdown-mode
+  :ensure t)
 
 ;;  ___      _         
 ;; | _ \_  _| |__ _  _ 
