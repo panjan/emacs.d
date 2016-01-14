@@ -35,6 +35,8 @@
    '("melpa" . "http://melpa.org/packages/")
    t)
   (package-initialize))
+;; no tabs
+(setq-default indent-tabs-mode nil)
 ;; saving desktop
 (desktop-save-mode 1)
 ;; package management
@@ -180,4 +182,13 @@
       (require 'tern-auto-complete)
       (tern-ac-setup)))
 (use-package grunt
+  :ensure t)
+
+;;   ___   _ _   
+;;  / __|_| | |_ 
+;; | (__|_  .  _|
+;;  \___|_     _|
+;;        |_|_|  
+
+(use-package csharp-mode
   :ensure t)
