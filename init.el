@@ -158,7 +158,9 @@
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
 ;; ruby-refactor
-;;(add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
+(use-package ruby-refactor
+  :ensure t)
+(add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
 ;;     _                          _      _   
 ;;  _ | |__ ___ ____ _ ___ __ _ _(_)_ __| |_ 
